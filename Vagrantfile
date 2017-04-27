@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/xenial64"
-  config.vm.box_url = "ftp://cairo.itworx.com/vagrant/ubuntu/xenial64.box"
+  config.vm.box = "ubuntu"
+  # config.vm.box_url = "ftp://cairo.itworx.com/vagrant/ubuntu/xenial64.box"
 
   config.vm.hostname = "slim"
   config.vm.network "forwarded_port", guest: 8000, host: 8000, host_ip: "127.0.0.1"
